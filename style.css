@@ -1,0 +1,149 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poller One", sans-serif;
+  background-color: #f6db61;
+  color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 375px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 43px;
+  }
+}
+
+/* header */
+
+.header {
+  width: 1440px;
+  height: 824px;
+  padding: 20px;
+  background-image: url(./img/header.jpg);
+  opacity: 0.75;
+}
+
+.nav-list {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 66px;
+  border-radius: 100px;
+  width: 1200px;
+  height: 60px;
+  box-shadow: 0 4px 4px 0 #081638;
+  background: #ffd65e;
+}
+
+.header-title {
+  font-weight: 400;
+  font-size: 78px;
+  background-clip: text;
+  text-shadow: 0 4px 44px 0 #fff;
+}
+
+.header-text {
+  max-width: 733px;
+  font-weight: 400;
+  font-size: 32px;
+  color: #01203f;
+  text-shadow: 0 4px 12px 0 #fff;
+  margin-top: 2px;
+  margin-bottom: 96px;
+}
+
+.nav-link {
+  padding: 6px 8px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.nav-link:active {
+  border-color: #01203f;
+  transition: all 0.3 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-button {
+  padding: 5px 15px;
+  background-color: rgb(97, 241, 244);
+  border: 1px solid blue;
+  border-radius: 50px;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 148px;
+}
+
+.img-wrap {
+  width: 540px;
+  height: 618px;
+  position: relative;
+}
+
+.girl {
+  position: absolute;
+  top: -162px;
+}
+
+.mobile {
+  position: absolute;
+  top: 0;
+  left: -142px;
+}
