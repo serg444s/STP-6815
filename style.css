@@ -41,7 +41,6 @@ img {
 
 body {
   font-family: "Poller One", sans-serif;
-  background-color: violet;
   color: #000;
   margin: 0 auto;
 }
@@ -54,9 +53,12 @@ html {
 
 .header {
   width: 375px;
+  height: 812px;
   /* padding: 20px; */
   margin: 0 auto;
   background-image: url(./img/header-mob.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .navigation {
@@ -80,7 +82,7 @@ html {
   top: 100%;
   left: 0;
   z-index: 4;
-  /* transform: translateY(-120%); */
+  transform: translateY(-120%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -125,21 +127,30 @@ html {
   background: #ffd65e;
 }
 
+.hero-text-wrap {
+  margin: 0 auto;
+  margin-top: 31px;
+}
+
 .header-title {
   font-weight: 400;
-  font-size: 78px;
+  font-size: 48px;
+  text-align: center;
   background-clip: text;
+  color: #ffd65e;
   text-shadow: 0 4px 44px 0 #fff;
+  text-align: center;
 }
 
 .header-text {
-  max-width: 733px;
+  max-width: 308px;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 20px;
   color: #01203f;
-  text-shadow: 0 4px 12px 0 #fff;
-  margin-top: 2px;
+  text-shadow: 10px 4px 12px 10px #fff;
+  margin-top: 22px;
   margin-bottom: 96px;
+  text-align: center;
 }
 
 .nav-link {
@@ -149,13 +160,13 @@ html {
   font-weight: 400;
   font-size: 18px;
   color: #01203f;
+  transition: all 0.3 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:focus,
 .nav-link:hover,
 .nav-link:active {
   border-color: #01203f;
-  transition: all 0.3 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-open {
@@ -166,21 +177,20 @@ html {
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 4px;
 
   svg {
     width: 24px;
     height: 20px;
-    stroke: #01203f;
-    fill: #01203f;
   }
 }
 
 .menu-open:hover,
 .menu-open:focus,
 .menu-open:active {
-  svg {
-    stroke: #356ca3;
-  }
+  border-color: #01203f;
 }
 
 .menu-open:hover .modal {
@@ -194,70 +204,133 @@ html {
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 4px;
 
   svg {
-    svg {
-      width: 24px;
-      height: 20px;
-      stroke: #01203f;
-      fill: #01203f;
-    }
+    width: 24px;
+    height: 20px;
+    stroke: #01203f;
+    fill: #01203f;
   }
 }
 
 .menu-close:hover,
 .menu-close:focus,
 .menu-close:active {
-  svg {
-    stroke: #356ca3;
-  }
+  border-color: #01203f;
 }
 
 .header-button {
-  padding: 5px 15px;
-  background-color: rgb(97, 241, 244);
-  border: 1px solid blue;
-  border-radius: 50px;
+  margin-left: 85px;
+  margin-top: 38px;
+  padding: 10px 20px;
+  border-radius: 30px;
   color: white;
+  background: linear-gradient(180deg, #fff 0%, #33b3ff 50%, #009ee0 100%);
 }
 
 .hero {
-  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 148px;
+  /* justify-content: space-between; */
+  /* margin-top: 148px; */
 }
 
 .img-wrap {
-  width: 540px;
-  height: 618px;
+  /* width: 540px;
+  height: 618px; */
+  width: 313px;
+  height: 625px;
   position: relative;
+  margin-top: 28px;
 }
 
 .girl {
+  background-image: url(./img/girl-mob.png);
+  width: 313px;
+  height: 625px;
+  position: absolute;
+  background-repeat: no-repeat;
+
+  /* top: -162px; */
+  top: 0;
+  right: -118px;
+}
+
+.mobile {
+  background-image: url(./img/mobile-mob.png);
+  width: 192px;
+  height: 379px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 70px;
+  left: 10px;
+}
+
+/* .girl {
   position: absolute;
   top: -162px;
+  right: 0;
 }
 
 .mobile {
   position: absolute;
   top: 0;
-  left: -142px;
-}
+  left: -72px;
+} */
 
 @media screen and (min-width: 1440px) {
   /* header */
   .header {
     width: 1440px;
     height: 824px;
-    padding: 20px;
+    padding: 20px 0;
     background-image: url(./img/header.jpg);
     opacity: 0.85;
   }
 
+  .header-title {
+    font-size: 78px;
+    text-align: start;
+  }
+
+  .header-text {
+    text-align: start;
+    font-size: 32px;
+    max-width: 700px;
+  }
+
+  .header-button {
+    margin-left: 0px;
+  }
+
+  .hero {
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .navigation {
     background-color: transparent;
+  }
+
+  .girl {
+    width: 498px;
+    height: 995px;
+    background-image: url(./img/girl.png);
+    top: 0;
+    left: -150px;
+  }
+  .mobile {
+    width: 268px;
+    height: 530px;
+    background-image: url(./img/Mobile.png);
+    top: 150px;
+    left: -300px;
   }
 
   .nav-list {
