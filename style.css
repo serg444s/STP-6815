@@ -41,40 +41,80 @@ img {
 
 body {
   font-family: "Poller One", sans-serif;
-  background-color: #f6db61;
+  background-color: violet;
   color: #000;
+  margin: 0 auto;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.container {
-  width: 375px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    padding: 0 43px;
-  }
-}
-
 /* header */
 
 .header {
-  width: 1440px;
-  height: 824px;
-  padding: 20px;
-  background-image: url(./img/header.jpg);
-  opacity: 0.75;
+  width: 375px;
+  /* padding: 20px; */
+  margin: 0 auto;
+  background-image: url(./img/header-mob.jpg);
+}
+
+.navigation {
+  width: 100%;
+  height: 60px;
+  background-color: #f6db61;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.modal {
+  border-bottom: 2px solid #091739;
+  border-radius: 0 0 26px 26px;
+  backdrop-filter: blur(22px);
+  background: #ffe769;
+  width: 375px;
+  height: 434px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 4;
+  /* transform: translateY(-120%); */
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 43px;
+  gap: 28px;
+  margin-top: 43px;
+}
+
+.menu-nav-link {
+  padding: 6px 8px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #091739;
+}
+
+.menu-nav-link:focus,
+.menu-nav-link:hover,
+.menu-nav-link:active {
+  border-color: #01203f;
+  transition: all 0.3 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list {
   margin: 0 auto;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 66px;
@@ -106,6 +146,9 @@ html {
   padding: 6px 8px;
   border: 2px solid transparent;
   border-radius: 100px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #01203f;
 }
 
 .nav-link:focus,
@@ -113,6 +156,61 @@ html {
 .nav-link:active {
   border-color: #01203f;
   transition: all 0.3 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-open {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+
+  svg {
+    width: 24px;
+    height: 20px;
+    stroke: #01203f;
+    fill: #01203f;
+  }
+}
+
+.menu-open:hover,
+.menu-open:focus,
+.menu-open:active {
+  svg {
+    stroke: #356ca3;
+  }
+}
+
+.menu-open:hover .modal {
+  transform: translateY(0);
+}
+
+.menu-close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  svg {
+    svg {
+      width: 24px;
+      height: 20px;
+      stroke: #01203f;
+      fill: #01203f;
+    }
+  }
+}
+
+.menu-close:hover,
+.menu-close:focus,
+.menu-close:active {
+  svg {
+    stroke: #356ca3;
+  }
 }
 
 .header-button {
@@ -146,4 +244,31 @@ html {
   position: absolute;
   top: 0;
   left: -142px;
+}
+
+@media screen and (min-width: 1440px) {
+  /* header */
+  .header {
+    width: 1440px;
+    height: 824px;
+    padding: 20px;
+    background-image: url(./img/header.jpg);
+    opacity: 0.85;
+  }
+
+  .navigation {
+    background-color: transparent;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  .modal {
+    display: none;
+  }
 }
