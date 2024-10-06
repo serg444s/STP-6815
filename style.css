@@ -401,6 +401,37 @@ html {
   }
 }
 
+.footer {
+  width: 375px;
+  height: 100px;
+  margin: 0 auto;
+  background: #56b4fa;
+  padding-top: 25px;
+}
+
+.footer-wrap {
+  margin: 0 auto;
+  margin-top: 12px;
+  width: 344px;
+}
+
+.footer-text {
+  font-family: "Poppins", Times, serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 10px;
+  color: #fff;
+}
+
+.footer-link {
+  text-align: center;
+  font-family: "Poppins", Times, serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 @media screen and (min-width: 1440px) {
   /* header */
   .header {
@@ -511,5 +542,30 @@ html {
   .about-text {
     font-size: 22px;
     max-width: 685px;
+  }
+
+  /* footer */
+
+  .footer {
+    width: 1440px;
+    height: 100px;
+    padding: 45px 49px;
+    display: flex;
+    gap: 162px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .footer-wrap {
+    margin: 0;
+    width: 400px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-link {
+    font-size: 18px;
   }
 }
