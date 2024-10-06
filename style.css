@@ -307,6 +307,42 @@ html {
   transform: translateY(0);
 }
 
+/* feature-list */
+
+#feature {
+  background-image: url(/img/feature-mob.png);
+}
+
+.feature-section-title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #091739;
+  text-align: center;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+}
+
+.feature-title {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
 @media screen and (min-width: 1440px) {
   /* header */
   .header {
