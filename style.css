@@ -416,6 +416,93 @@ html {
   font-size: 28px;
   color: #091739;
   text-align: center;
+  margin-bottom: 37px;
+}
+
+.swiper {
+  width: 335px;
+  height: 340px;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  border: 2px solid #fff;
+  border-radius: 26px;
+  width: 335px;
+  height: 340px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.slide1 {
+  background-image: url(./img/gallery/01-mob.webp);
+}
+.slide2 {
+  background-image: url(./img/gallery/02-mob.webp);
+}
+.slide3 {
+  background-image: url(./img/gallery/03-mob.webp);
+}
+.slide4 {
+  background-image: url(./img/gallery/04-mob.webp);
+}
+.slide5 {
+  background-image: url(./img/gallery/05-mob.webp);
+}
+.slide7 {
+  background-image: url(./img/gallery/07-mob.webp);
+}
+.slide8 {
+  background-image: url(./img/gallery/08-mob.webp);
+}
+
+.swiper-button-prev {
+}
+
+#reviews {
+  width: 375px;
+  height: 1000px;
+  background-image: url(./img/reviews-mob.png);
+  margin: 0 auto;
+  padding-top: 22px;
+  text-align: center;
+}
+
+.reviews-section-title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #091739;
+  margin-bottom: 39px;
+}
+
+.reviews-item {
+  background: #fff;
+  border: 1px solid #fccd06;
+  border-radius: 26px;
+  padding: 16px 36px;
+  width: 335px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  box-shadow: 0 4px 20px 0 #ea7901;
+}
+
+.reviews-name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
+
+.reviews-text {
+  font-family: "Poppins", Times, serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  color: #000;
 }
 
 /* footer */
@@ -600,5 +687,56 @@ html {
 
   .gallery-title {
     font-size: 36px;
+    margin-bottom: 66px;
+  }
+
+  .swiper {
+    width: 1400px;
+    height: 340px;
+  }
+
+  .swiper-wrapper {
+  }
+
+  .swiper-slide {
+    width: 604px;
+    height: 340px;
+  }
+
+  .slide1 {
+    background-image: url(./img/gallery/01.webp);
+  }
+  .slide2 {
+    background-image: url(./img/gallery/02.webp);
+  }
+  .slide3 {
+    background-image: url(./img/gallery/03.webp);
+  }
+  .slide4 {
+    background-image: url(./img/gallery/04.webp);
+  }
+  .slide5 {
+    background-image: url(./img/gallery/05.webp);
+  }
+  .slide7 {
+    background-image: url(./img/gallery/07.webp);
+  }
+  .slide8 {
+    background-image: url(./img/gallery/08.webp);
+  }
+
+  /* reviews */
+
+  #reviews {
+    width: 1440px;
+    height: 400px;
+  }
+
+  .reviews-section-title {
+    margin-bottom: 74px;
+  }
+
+  .reviews-list {
+    display: none;
   }
 }
