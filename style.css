@@ -219,6 +219,7 @@ html {
 }
 
 .header-button {
+  font-family: "Poppins", Times, serif;
   /* margin-left: 85px; */
   margin: 38px auto;
   padding: 10px 20px;
@@ -335,6 +336,10 @@ html {
 }
 
 .feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
 .feature-title {
