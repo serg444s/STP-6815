@@ -522,6 +522,12 @@ html {
   display: none;
 }
 
+.swiper-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 /* footer */
 
 .footer {
@@ -789,10 +795,10 @@ html {
   .reviews-button-wrap {
     display: block;
     margin: 0 auto;
-    margin-top: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
+    margin-top: 22px;
   }
 }

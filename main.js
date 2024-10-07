@@ -47,8 +47,8 @@ const reviewsswiper = new Swiper(".newswiper", {
   slidesPerView: 3,
   spaceBetween: 36,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".sswiper-button-prev",
+    nextEl: ".reviews-right",
+    prevEl: ".reviews-left",
   },
   mousewheel: true,
   keyboard: true,
@@ -59,8 +59,8 @@ let swiper = new Swiper(".swiper", {
   slidesPerView: screenSize(),
   spaceBetween: 20,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".gallery-right",
+    prevEl: ".gallery-left",
   },
   mousewheel: true,
   keyboard: true,
@@ -73,8 +73,8 @@ window.addEventListener("resize", () => {
     slidesPerView: screenSize(),
     spaceBetween: 20,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".gallery-right",
+      prevEl: ".gallery-left",
     },
     mousewheel: true,
     keyboard: true,
