@@ -315,7 +315,7 @@ html {
   width: 375px;
   height: 880px;
   padding: 24px 20px;
-  background-image: url(/img/feature-mob.png);
+  background-image: url(./img/feature-mob.png);
 }
 
 .feature-section-title {
@@ -624,7 +624,7 @@ html {
   #feature {
     width: 1440px;
     height: 600px;
-    background-image: url(/img/feature.png);
+    background-image: url(./img/feature.png);
   }
 
   .feature-list {
