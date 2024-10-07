@@ -34,7 +34,7 @@ ul {
 
 .text {
   font-family: "Poppins", Times, serif;
-
+  text-align: justify;
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
