@@ -1,5 +1,3 @@
-import "./style.css";
-
 const openModalBtn = document.querySelector(".menu-open");
 const closeModalBtn = document.querySelector(".menu-close");
 // const body = document.querySelector("body");
