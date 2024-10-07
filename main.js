@@ -54,7 +54,7 @@ const reviewsswiper = new Swiper(".newswiper", {
   keyboard: true,
 });
 
-const swiper = new Swiper(".swiper", {
+let swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: screenSize(),
   spaceBetween: 20,
