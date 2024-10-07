@@ -66,4 +66,17 @@ const swiper = new Swiper(".swiper", {
   keyboard: true,
 });
 
-window.addEventListener("resize", screenSize);
+window.addEventListener("resize", () => {
+  swiper.destroy();
+  swiper = new Swiper(".swiper", {
+    loop: true,
+    slidesPerView: screenSize(),
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+});

@@ -509,6 +509,19 @@ html {
   display: none;
 }
 
+.button-wrap {
+  margin: 0 auto;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.reviews-button-wrap {
+  display: none;
+}
+
 /* footer */
 
 .footer {
@@ -771,5 +784,15 @@ html {
 
   .reviews-text {
     font-size: 16px;
+  }
+
+  .reviews-button-wrap {
+    display: block;
+    margin: 0 auto;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
   }
 }
