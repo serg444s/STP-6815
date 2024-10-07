@@ -505,6 +505,10 @@ html {
   color: #000;
 }
 
+.newswiper {
+  display: none;
+}
+
 /* footer */
 
 .footer {
@@ -738,5 +742,34 @@ html {
 
   .reviews-list {
     display: none;
+  }
+
+  .newswiper {
+    margin: 0 auto;
+    display: block;
+    width: 1400px;
+    height: 164px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .reviews-item {
+    background: #fff;
+    border: 1px solid #fccd06;
+    border-radius: 26px;
+    padding: 16px 36px;
+    width: 520px;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 20px 0 #ea7901;
+  }
+
+  .reviews-name {
+    font-size: 24px;
+  }
+
+  .reviews-text {
+    font-size: 16px;
   }
 }

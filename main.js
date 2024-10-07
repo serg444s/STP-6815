@@ -42,6 +42,18 @@ function screenSize() {
   r;
 }
 
+const reviewsswiper = new Swiper(".newswiper", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 36,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".sswiper-button-prev",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
 const swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: screenSize(),
